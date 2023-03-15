@@ -1,78 +1,56 @@
-<h1> Tableau </h1>
+<form action="http://bienvu.net/script.php" method="get">
 
-<hr>
 
-<table border="0">
+    <p> * Ces zones sont obligatoires </p>
+    <fieldset>
+        <legend> Vos coordonnées </legend>
 
-    <thead>
 
-        <tr>
-            <th> Photo </th>
-            <th> ID </th>
-            <th> Catégorie </th>
-            <th> Libellé </th>
-            <th> Prix </th>
-            <th> Couleur </th>
-        </tr>
+        <label for="nom"> Votre nom* : </label> <input type="text" name="nom" id="nom" size="15">
+        <p>
+            <label for="nom"> Votre prénom* : </label> <input type="text" name="nom" id="nom" size="15">
+        <p>
+            Sexe* :
+            <input type="radio" name="couleur" value="féminin"> Féminin
+            <input type="radio" name="couleur" value="masculin"> Masculin
+        <p>
+            <label for="date"> Date de naissance* :</label> <input type="date" name="ddn" id="date">
+        <p>
+            <label for="postal"> Code postal* : </label> <input type="text" name="nom" id="nom" size="15">
+        <p>
+            <label for="adresse"> Adresse : </label> <input type="text" name="nom" id="nom" size="15">
+        <p>
+            <label for="ville"> Ville : </label> <input type="text" name="nom" id="nom" size="15">
+        <p>
+            <label for="mail"> Email* : </label> <input type="text" placeholder="dave.loper@afpa.fr" name="nom" id="nom"
+                size="25">
 
-    </thead>
+    </fieldset>
+    <p>
+    <fieldset>
 
-    <tbody>
-        <tr>
-            <td>
-                <center> <img src="img/7.jpg" alt="barbecues" width="20%"> </center>
-            </td>
-            <td> 7 </td>
-            <td> Barbecues </td>
-            <td> Aramis </td>
-            <td> 110.00€ </td>
-            <td> Brun </td>
-        </tr>
+        <legend> Votre demande </legend>
+        <p> Sujet* :
 
-        <tr>
-            <td>
-                <center> <img src="img/8.jpg" alt="Barbecues" width="20%" </center>
-            </td>
-            <td> 8 </td>
-            <td> Barbecues </td>
-            <td> Athos </td>
-            <td> 249.99€ </td>
-            <td> Noir </td>
-        </tr>
+            <select name="sujets" id="sujets">
+                <option> Veuillez séléctionner un sujet </option>
+                <option value="commandes"> Mes comandes </option>
+                <option value="question"> Question sur un produit </option>
+                <option value="reclamation"> Réclamation </option>
+                <option value="autres"> Autres </option>
+            </select>
 
-        <tr>
-            <td>
-                <center> <img src="img/11.jpg" alt="Barbecues" width="20%" </center>
-            </td>
-            <td> 11 </td>
-            <td> Barbecues </td>
-            <td> Clatronic </td>
-            <td> 135.90€ </td>
-            <td> Chrome </td>
-        </tr>
+        <p>
+            <label for="question"> Votre question* : </label> <input type="text" name="nom" id="nom" size="15">
 
-        <tr>
-            <td>
-                <center> <img src="img/12.jpg" alt="Barbecues" width="20%" </center>
-            </td>
-            <td> 12 </td>
-            <td> Barbecues </td>
-            <td> Camping </td>
-            <td> 88.00€ </td>
-            <td> Noir </td>
-        </tr>
 
-        <tr>
-            <td>
-                <center> <img src="img/13.jpg" alt="Brouette" width="20%" </center>
-            </td>
-            <td> 13 </td>
-            <td> Brouette </td>
-            <td> Green </td>
-            <td> 49.00€ </td>
-            <td> Verte </td>
-        </tr>
 
-    </tbody>
+        <p>
+            <input type="checkbox" name="couleur2" value="Rouge"> * J'accepte le traitement informatique de ce
+            formulaire
+        <p>
+            <input type="submit">
 
-</table>
+    </fieldset>
+
+</form>
