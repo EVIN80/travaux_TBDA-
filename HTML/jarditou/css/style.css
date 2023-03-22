@@ -1,0 +1,58 @@
+.tab {
+    width: 100%;
+}
+
+.promo {
+    width: 100%;
+}
+
+.logo {
+    width: 300px;
+}
+
+ul {
+    background-color: black;
+    width: 98%;
+    height: 60px;
+}
+
+ul li a {
+    color: white;
+}
+
+@media screen and (max-width:768px) {
+    .gauche {
+        position: relative;
+        width: 100%;
+    }
+
+    .droite {
+        display: none;
+        padding: 0px 10px;
+    }
+}
+@media screen and(min-width: 768px) {
+    .gauche{
+        position: relative;
+        max-width: 100%;
+        width: 80%;
+    }
+    
+}
+.droite{
+    position: relative;
+    padding-left: 4px;
+    width: 20%;
+    background-color: grey;
+    border: 1px transparent;
+}
+.droite aside{
+padding: 11px 11px;
+}
+.droite h2{
+    font-size: 22px;
+}
+
+.titre {
+    text-align: center;
+}
